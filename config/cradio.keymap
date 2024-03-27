@@ -21,7 +21,6 @@
 / {
     behaviors {
         ht: hold_tap {
-            label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -79,14 +78,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │          │   │ PAGE UP  │   HOME   │  UP      │ END      │BACKSPACE │
-            &kp INS    &kp N7     &kp N8     &kp N9     &trans         &kp PG_UP  &kp HOME   &kp UARW  &kp END    &kp BSPC
+        //│ INSERT   │  7       │  8       │  9       │          │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
+            &kp INS    &kp N7     &kp N8     &kp N9     &trans         &kp PG_UP  &kp HOME   &kp UP   &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ ENTER    │
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp PG_DN  &kp LARW   &kp DARW   &kp RARW   &kp ENTER
+        //│ DELETE   │  4       │  5       │  6       │          │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
+            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │  0       │   │          │          │          │          │          │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &trans     &trans     &trans
+        //│ CAPS     │  1       │  2       │  3       │  0       │   │          │          │          │          │ ENTER    │
+           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
