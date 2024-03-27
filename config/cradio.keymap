@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <zephyr/dt-bindings/dt-util.h>
 
 // Home row mods macro
 #define HRML(k2,k3,k4) &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -17,6 +18,16 @@
 #define RIG 2
 #define LEF 3
 #define TRI 4
+
+/* Left click */
+#define MB1 BIT(0)
+#define LCLK (MB1)
+
+/* Right click */
+#define MB2 BIT(1)
+#define RCLK (MB2)
+
+
 
 / {
     behaviors {
@@ -78,11 +89,11 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │          │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
-            &kp INS    &kp N7     &kp N8     &kp N9     &trans         &kp PG_UP  &kp HOME   &kp UP   &kp END    &kp DEL
+        //│ INSERT   │  7       │  8       │  9       │    MB2   │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
+            &kp INS    &kp N7     &kp N8     &kp N9     &mkp LCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
-            &kp DEL    &kp N4     &kp N5     &kp N6     &trans         &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
+        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
+            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  1       │  2       │  3       │  0       │   │          │          │          │          │ ENTER    │
            &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &trans     &trans     &kp ENTER
