@@ -27,7 +27,12 @@
 #define MB2 BIT(1)
 #define RCLK (MB2)
 
+ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 
+ZMK_BEHAVIOR(ss_cw, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sk LSHFT>, <&caps_word>;
+)
 
 / {
     behaviors {
@@ -90,15 +95,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  7       │  8       │  9       │    MB2   │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
-            &kp INS    &kp N7     &kp N8     &kp N9     &mkp LCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
+            &kp INS    &kp N7     &kp N8     &kp N9     &mkp RCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
-            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
+        //│ LEF TAB  │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
+           &kp LEF TAB &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │  0       │   │          │          │          │          │ ENTER    │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &trans     &trans     &kp ENTER
+        //│ CAPS     │  1       │  2       │  3       │  0       │   │   MB1    │  COPY    │  PASTE   │    MB2   │ ENTER    │
+           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0        &mkp LCLK  &kp LC (C) &kp LC (V)  &mkp RCLK  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans      &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
