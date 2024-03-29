@@ -41,9 +41,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    ZMK_COMBO(ESCAPE,  &kp ESC, 0 1, ALL, 25)
-    ZMK_COMBO(DELETE,  &kp DEL, 8 9, ALL, 25)
-    ZMK_COMBO(CAPS LOCK, &kp caps_word, 4 5, ALL, 25)
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -53,7 +50,7 @@
         };
     };
 
-    keymap {
+     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
@@ -92,14 +89,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │    MB2   │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
-            &kp INS    &kp N7     &kp N8     &kp N9     &mkp RCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
+        //│ INSERT   │  7       │  8       │  9       │    MB1   │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
+            &kp INS    &kp N7     &kp N8     &kp N9     &mkp LCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEF TAB  │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
-           &kp LEF TAB &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
+        //│ LEF TAB  │  4       │  5       │  6       │     0    │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
+           &kp LEF TAB &kp N4     &kp N5     &kp N6     &kp N0        &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │  0       │   │   MB1    │  COPY    │  PASTE   │    MB2   │ ENTER    │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0        &mkp LCLK  &kp LC (C) &kp LC (V)  &mkp RCLK  &kp ENTER
+        //│ CAPS     │  1       │  2       │  3       │    MB2   │   │  M LEFT  │  M DOWN  │   M UP   │ M RIGHT  │ ENTER    │
+           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -112,11 +109,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│  "       │  [       │  {       │  (       │   PASTE  │   │   /      │  -       │  =       │     :    │  ;       │
+            &kp DQT    &kp LBKT   &kp LBRC   &kp LPAR   &kp LC (V)     &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│  '       │  ]       │  }       │  )       │   COPY   │   │    \     │  _       │  +       │  │       │   ?      │
+            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR  &kp LC (C)        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
