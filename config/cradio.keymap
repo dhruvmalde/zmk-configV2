@@ -19,14 +19,6 @@
 #define LEF 3
 #define TRI 4
 
-/* Left click */
-#define MB1 BIT(0)
-#define LCLK (MB1)
-
-/* Right click */
-#define MB2 BIT(1)
-#define RCLK (MB2)
-
 &mmv {
     time-to-max-speed-ms = <500>;
 };
