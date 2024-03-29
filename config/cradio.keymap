@@ -71,26 +71,26 @@
             bindings = <&kp ESC>;
         };
 
-        compatible = "zmk,combos";
+        
         combo_copy {
                 timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp LC(C)>;
         };
-        compatible = "zmk,combos";
+        
         combo_paste {
                 timeout-ms = <50>;
                 key-positions = <22 23>;
                 bindings = <&kp LC(V)>;
         };
-        compatible = "zmk,combos";
+        
         combo_capsLock {
                 timeout-ms = <50>;
                 key-positions = <0 20>;
                 bindings = <&caps_word>;
         };
 
-        compatible = "zmk,combos";
+        
         combo_delete {
                 timeout-ms = <50>;
                 key-positions = <8 9>;
@@ -145,17 +145,17 @@
             >;
         };
 
-        left_layer {
+        Left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│    1     │    2     │  3       │  4       │    5     │   │ 6        |    7     |    8     │     9    │     0    │  
             &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   SC UP  │  SC LT   │ M UP     │  SC RT   │    MB1   │   │  PG UP   |   HOME   │     UP   │ END      │BACKSPACE │ 
-          &mwh SCROLL_UP &mwh SCROLL_LEFT &mmv MOVE_UP &mwh SCROLL_RIGHT &mkp LCLK &kp PG_UP &kp HOME &kp UP &kp END &kp BSPC        
+           &mwh SCROLL_UP &mwh SCROLL_LEFT &mmv MOVE_UP &mwh SCROLL_RIGHT &mkp LCLK &kp PG_UP &kp HOME &kp UP &kp END &kp BSPC        
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ SC DWN   │   M LT   │  M DN    │   M RT   │   MB2    │   │  PG DN   |  LEFT    │  DOWN    │   RIGHT  │  ENTER   │ 
-          &mwh SCROLL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp RCLK &kp PG_DOWN &kp LEFT &kp DOWN &kp RIGHT &kp ENTER
+           &mwh SCROLL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp RCLK &kp PG_DOWN &kp LEFT &kp DOWN &kp RIGHT &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
