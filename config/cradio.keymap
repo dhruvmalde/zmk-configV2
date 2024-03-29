@@ -20,7 +20,7 @@
 
 #include "custom_keycodes.dtsi"
 #include "settings.dtsi"
-#include "settings_pd.dtsi"
+//#include "settings_pd.dtsi"
 #include "conditional_layers.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi"
