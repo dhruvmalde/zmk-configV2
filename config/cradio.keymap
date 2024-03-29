@@ -15,8 +15,8 @@
 
 #define MAC 0
 #define WIN 1
-#define RIG 2
-#define LEF 3
+#define LEF 2
+#define RIG 3
 #define TRI 4
 
 #define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
@@ -131,34 +131,34 @@
             >;
         };
 
-        right_layer {
+        left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │     0    │   │ DELETE   | HOME     │ PAGE DN  │  PAGE UP │ END      │  
-            &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp DEL    &kp HOME   &kp PG_DN  &kp PG_UP &kp END    
+        //│ INSERT   │  7       │  8       │  9       │     0    │   │ BACKSPACE| HOME     │ PAGE DN  │  PAGE UP │ END      │  
+            &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp BSPC   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │BACKSPACE |LEFT     │ DOWN     │ UP       │ RIGHT     │ 
-            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK     &kp BSPC    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  
+        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ SC UP    |LEFT      │ DOWN     │ UP       │ RIGHT     │ 
+            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &mwh SCROLL_UP &kp LEFT &kp DOWN  &kp UP    &kp RIGHT  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │   MB2    │   │  ENTER   |  M LT    │  M DN    │   M UP   │  M RT    │ 
-           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK     &kp ENTER &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp ENTER
+        //│ CAPS     │  1       │  2       │  3       │   MB2    │   │  SC DWN  |  M LT    │  M DN    │   M UP   │  M RT    │ 
+           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK    &mwh SCROLL_DOWN &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
         
-         left_layer {
+         Right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   SC UP  │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
-           &mwh SCROLL_UP   &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ BACKSPACE|
+             &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  SC DWN  │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
-           &mwh SCROLL_DOWN  &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  ENTER   |
+            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
