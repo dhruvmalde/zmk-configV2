@@ -117,7 +117,7 @@
             &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  1       │  2       │  3       │   MB2    │   │  M LT    │  M DN    │   M UP   │  M RT    │ ENTER    │
-           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK  &mkp MOVE_LEFT  &mkp MOVE_DOWN &mkp MOVE_UP &mkp MOVE_RIGHT   &kp ENTER
+           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
