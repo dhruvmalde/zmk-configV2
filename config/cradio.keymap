@@ -27,7 +27,17 @@
 #define MB2 BIT(1)
 #define RCLK (MB2)
 
+// tap: sticky shift | double tap: capsword
+ZMK_BEHAVIOR(ss_cw, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sk LSHFT>, <&caps_word>;
+)
 
+
+// combos
+#undef COMBO_TERM
+#define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
+ZMK_COMBO(combo_ESC,  &ESC, 0 1, ALL) 
 
 / {
     behaviors {
