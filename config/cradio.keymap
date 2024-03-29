@@ -54,7 +54,7 @@
                 bindings = <&kp LC(C)>;
         };
        
-        combo_Paste {
+        combo_paste {
                 timeout-ms = <50>;
                 key-positions = <21 22>;
                 bindings = <&kp LC(V)>;
@@ -118,7 +118,7 @@
         //│ CAPS     │  1       │  2       │  3       │   MB2    │   │          │          │          │          │ ENTER    │
            &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK      &trans     &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &kp ESC     &trans
+                                             &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -129,13 +129,13 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
-            &trans     &kp LBKT   &kp LBRC   &kp LPAR    &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│   PASTE  │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
+            &kp LC(V)   &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
-            &trans     &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT       &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│  COPY    │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
+            &kp LC(C)  &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &kp ESC     &trans
+                                             &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
