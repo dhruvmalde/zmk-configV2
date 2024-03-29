@@ -1,33 +1,11 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-// ZMK includes
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/ext_power.h>
-
-
-// Personal includes
-#ifdef HAS_MOUSE_KEYS
-     #include "mouse_keys.dtsi"
-#endif
-
-#ifdef HAS_MOUSE_TP
-     #include "mouse_tp.dtsi"
-#endif
-
-#include "custom_keycodes.dtsi"
-#include "settings.dtsi"
-//#include "settings_pd.dtsi"
-#include "conditional_layers.dtsi"
-#include "macros.dtsi"
-#include "combos.dtsi"
-#include "behaviours_homerow_mods.dtsi"
-#include "behaviours_mod_morph.dtsi"
-#include "behaviours_other.dtsi"
-
+#include <dt-bindings/zmk/outputs.h>
+#include <zephyr/dt-bindings/dt-util.h>
 
 // Home row mods macro
 #define HRML(k2,k3,k4) &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
@@ -112,13 +90,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  7       │  8       │  9       │    MB2   │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
-            &kp INS    &kp N7     &kp N8     &kp N9     &mkp RCLK     &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
+            &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
             &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │  0       │   │   M LT   │  M DN    │  M UP    │  M RT    │ ENTER    │
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &kp ENTER
+        //│ CAPS     │  1       │  2       │  3       │   MB2    │   │          │          │          │          │ ENTER    │
+           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK      &trans     &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
