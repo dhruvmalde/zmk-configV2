@@ -40,6 +40,29 @@
         };
     };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+
+    combo_copy {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(C)>;
+        };
+   
+    combo_Paste {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(V)>;
+        };
+    
+    };
+};
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
