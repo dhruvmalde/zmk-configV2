@@ -11,22 +11,22 @@
 
 // Personal includes
 #ifdef HAS_MOUSE_KEYS
-     #include "includes/mouse_keys.dtsi"
+     #include "mouse_keys.dtsi"
 #endif
 
 #ifdef HAS_MOUSE_TP
-     #include "includes/mouse_tp.dtsi"
+     #include "mouse_tp.dtsi"
 #endif
 
-#include "includes/custom_keycodes.dtsi"
-#include "includes/settings.dtsi"
-//#include "includes/settings_pd.dtsi"
-#include "includes/conditional_layers.dtsi"
-#include "includes/macros.dtsi"
-#include "includes/combos.dtsi"
-#include "includes/behaviours_homerow_mods.dtsi"
-#include "includes/behaviours_mod_morph.dtsi"
-#include "includes/behaviours_other.dtsi"
+#include "custom_keycodes.dtsi"
+#include "settings.dtsi"
+#include "settings_pd.dtsi"
+#include "conditional_layers.dtsi"
+#include "macros.dtsi"
+#include "combos.dtsi"
+#include "behaviours_homerow_mods.dtsi"
+#include "behaviours_mod_morph.dtsi"
+#include "behaviours_other.dtsi"
 
 
 // Home row mods macro
