@@ -49,16 +49,16 @@
             bindings = <&kp ESC>;
         };
 
-    combo_copy {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp LC(C)>;
+        combo_copy {
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp LC(C)>;
         };
-   
-    combo_Paste {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp LC(V)>;
+       
+        combo_Paste {
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp LC(V)>;
         };
     
     };
