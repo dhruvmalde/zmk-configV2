@@ -29,11 +29,6 @@
 
 ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 
-ZMK_BEHAVIOR(ss_cw, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&sk LSHFT>, <&caps_word>;
-)
-
 / {
     behaviors {
         ht: hold_tap {
