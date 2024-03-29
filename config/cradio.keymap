@@ -18,15 +18,18 @@
 #define RIG 2
 #define LEF 3
 #define TRI 4
+
 #define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
+
 #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)    
+
 &mmv {
     time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
 };
@@ -36,13 +39,16 @@
 #undef SCROLL_DOWN
 #undef SCROLL_LEFT
 #undef SCROLL_RIGHT
+
 #define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
 #define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
 #define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
 &mwh {
   time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
 };
+
 / {
     behaviors {
         ht: hold_tap {
@@ -128,14 +134,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │     0    │   │ HOME     │ PAGE DN  │  PAGE UP │ END      │  DELETE  │
-            &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp HOME   &kp PG_DN  &kp PG_UP &kp END     &kp DEL
+        //│ INSERT   │  7       │  8       │  9       │     0    │   │ DELETE   | HOME     │ PAGE DN  │  PAGE UP │ END      │  
+            &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp DEL    &kp HOME   &kp PG_DN  &kp PG_UP &kp END    
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │ BACKSPACE│
-            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK      &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT   &kp BSPC
+        //│ DELETE   │  4       │  5       │  6       │    MB1   │   │BACKSPACE |LEFT     │ DOWN     │ UP       │ RIGHT     │ 
+            &kp DEL    &kp N4     &kp N5     &kp N6     &mkp LCLK     &kp BSPC    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  1       │  2       │  3       │   MB2    │   │  M LT    │  M DN    │   M UP   │  M RT    │ ENTER    │
-           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK     &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp ENTER
+        //│ CAPS     │  1       │  2       │  3       │   MB2    │   │  ENTER   |  M LT    │  M DN    │   M UP   │  M RT    │ 
+           &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK     &kp ENTER &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -148,11 +154,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   PASTE  │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp LC(V)   &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│   SC UP  │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
+           &mwh SCROLL_UP   &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  COPY    │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp LC(C)  &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+        //│  SC DWN  │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
+           &mwh SCROLL_DOWN  &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
