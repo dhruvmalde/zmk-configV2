@@ -7,6 +7,27 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <zephyr/dt-bindings/dt-util.h>
 
+
+// Personal includes
+#ifdef HAS_MOUSE_KEYS
+     #include "mouse_keys.dtsi"
+#endif
+
+#ifdef HAS_MOUSE_TP
+     #include "mouse_tp.dtsi"
+#endif
+
+#include "custom_keycodes.dtsi"
+#include "settings.dtsi"
+#include "settings_pd.dtsi"
+#include "conditional_layers.dtsi"
+#include "macros.dtsi"
+#include "combos.dtsi"
+#include "behaviours_homerow_mods.dtsi"
+#include "behaviours_mod_morph.dtsi"
+#include "includes/behaviours_other.dtsi"
+
+
 // Home row mods macro
 #define HRML(k2,k3,k4) &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3
