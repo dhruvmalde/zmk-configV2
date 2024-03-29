@@ -25,7 +25,7 @@
 #include "combos.dtsi"
 #include "behaviours_homerow_mods.dtsi"
 #include "behaviours_mod_morph.dtsi"
-#include "includes/behaviours_other.dtsi"
+#include "behaviours_other.dtsi"
 
 
 // Home row mods macro
