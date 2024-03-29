@@ -19,10 +19,6 @@
 #define LEF 3
 #define TRI 4
 
-#undef COMBO_TERM
-#define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
-ZMK_COMBO(combo_esc ,  &ESC , 0 1, ALL)  // custom sleep macro, only active on NAV layer
-
 /* Left click */
 #define MB1 BIT(0)
 #define LCLK (MB1)
@@ -46,11 +42,6 @@ ZMK_COMBO(combo_esc ,  &ESC , 0 1, ALL)  // custom sleep macro, only active on N
         };
     };
 
-// tap: sticky shift | double tap: capsword
-ZMK_BEHAVIOR(ss_cw, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&sk LSHFT>, <&caps_word>;
-)
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -98,7 +89,7 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  7       │  8       │  9       │    0     │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
+        //│ INSERT   │  7       │  8       │  9       │     0    │   │ PAGE UP  │   HOME   │  UP      │ END      │  DELETE  │
             &kp INS    &kp N7     &kp N8     &kp N9      &kp N0        &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │    MB1   │   │ PAGE DN  │ LEFT     │ DOWN     │ RIGHT    │ BACKSPACE│
@@ -107,7 +98,7 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
         //│ CAPS     │  1       │  2       │  3       │   MB2    │   │          │          │          │          │ ENTER    │
            &caps_word  &kp N1     &kp N2     &kp N3     &mkp RCLK      &trans     &trans     &trans     &trans     &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans     &kp ESC        &kp ESC     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -118,13 +109,13 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│          │  [       │  {       │  (       │    "     │   │   /      │  -       │  =       │     :    │  ;       │
+            &trans     &kp LBKT   &kp LBRC   &kp LPAR    &kp DQT        &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
+        //│          │  ]       │  }       │  )       │  '       │   │    \     │  _       │  +       │  │       │   ?      │
+            &trans     &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT       &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &kp ESC        &kp ESC     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
