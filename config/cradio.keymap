@@ -111,7 +111,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        Default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
@@ -128,7 +128,7 @@
             >;
         };
 
-        windows_layer {
+        Windows_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
@@ -145,16 +145,16 @@
             >;
         };
         
-        left_layer {
+        Left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│    1     │    2     │  3       │  4       │    5     │   │ 6        |    7     |    8     │     9    │     0    │  
             &kp N1     &kp N2     &kp N3     &kp N4      &kp N5        &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   SC UP  │  SC LT   │ M UP     │  SC RT   │    MB1   │   │  PG UP   |   HOME   │     UP   │ END      │BACKSPACE │ 
+        //│   SC UP  │  SC LT   │ M UP     │  SC RT   │    MB1   │   │  PAGE UP   |   HOME   │     UP   │ END      │BACKSPACE │ 
            &mwh SCROLL_UP &mwh SCROLL_LEFT &mmv MOVE_UP &mwh SCROLL_RIGHT &mkp LCLK &kp PG_UP &kp HOME &kp UP &kp END &kp BSPC        
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ SC DWN   │   M LT   │  M DN    │   M RT   │   MB2    │   │  PG DN   |  LEFT    │  DOWN    │   RIGHT  │  ENTER   │ 
+        //│ SC DWN   │   M LT   │  M DN    │   M RT   │   MB2    │   │  PAGE DN |  LEFT    │  DOWN    │   RIGHT  │  ENTER   │ 
             &mwh SCROLL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mkp RCLK &kp PG_DOWN &kp LEFT &kp DOWN &kp RIGHT &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
@@ -179,7 +179,7 @@
             >;
         };
 
-        tri_layer {
+        Tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬───────────┬────────────╮   ╭────────────┬────────────┬──────────┬───────────┬──────────╮
         //│  F1      │  F2      │  F3      │  F4       │ PROFILE 0  │   │ PROFILE 2  │ TOGGLEOUT  │ WINDOWS  │ VOL MUTE  │ NEXTSONG │
