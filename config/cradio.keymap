@@ -69,6 +69,7 @@
             then-layer = <TRI>;
         };
     };
+
     #define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
     #undef MOVE_UP
     #undef MOVE_DOWN
@@ -77,11 +78,10 @@
     #define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
     #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
     #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
-    #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
-    
-    &mmv {
-    	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
-    };
+    #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)    
+        &mmv {
+        	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+        };
 
     #define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
     #undef SCROLL_UP
@@ -92,10 +92,9 @@
     #define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
     #define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
     #define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
-    
-    &mwh {
-      time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
-    };
+        &mwh {
+          time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
+        };
 
     keymap {
         compatible = "zmk,keymap";
