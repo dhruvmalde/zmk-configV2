@@ -27,9 +27,7 @@
 #define MB2 BIT(1)
 #define RCLK (MB2)
 
-ZMK_COMBO(ESCAPE,  &kp ESC, 0 1, ALL, 25)
-ZMK_COMBO(DELETE,  &kp DEL, 8 9, ALL, 25)
-ZMK_COMBO(CAPS LOCK, &kp caps_word, 4 5, ALL, 25)
+
 
 / {
     behaviors {
@@ -43,6 +41,9 @@ ZMK_COMBO(CAPS LOCK, &kp caps_word, 4 5, ALL, 25)
             bindings = <&kp>, <&kp>;
         };
     };
+    ZMK_COMBO(ESCAPE,  &kp ESC, 0 1, ALL, 25)
+    ZMK_COMBO(DELETE,  &kp DEL, 8 9, ALL, 25)
+    ZMK_COMBO(CAPS LOCK, &kp caps_word, 4 5, ALL, 25)
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
