@@ -39,6 +39,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+};
 
 / {
     combos {
