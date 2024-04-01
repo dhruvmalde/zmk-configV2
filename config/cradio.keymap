@@ -168,11 +168,11 @@
         left_layer {
             bindings = <
         //╭──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────╮    ╭─────────────┬─────────────┬────────────────┬─────────────┬─────────────╮
-        //│   DOT            │  M B2          │      M UP       │      M B2        │   SCROLL UP  │    │  PAGE UP    │   HOME      |      UP        │      END    │  BACKSPACE  │   
-            &mwh DOT            &mkp RCLK        &mmv MOVE_UP    &mkp LCLK           &mwh SCROLL_UP       &kp PG_UP      &kp HOME       &kp UP         &kp END       &kp BSPC  
+        //│       %          │  M B2          │      M UP       │      M B2        │   SCROLL UP  │    │  PAGE UP    │   HOME      |      UP        │      END    │  BACKSPACE  │   
+            &kp PRCNT            &mkp RCLK        &mmv MOVE_UP    &mkp LCLK           &mwh SCROLL_UP       &kp PG_UP      &kp HOME       &kp UP         &kp END       &kp BSPC  
         //├──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
-        //│       %          │    M LEFT      │     M DOWN     │  M RIGHT          │ SCROLL_DOWN  │    │  PAGE DOWN    LEFT        |   DWON         │      RIGHT  │  ENTER      │
-             &kp PRCNT        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT      &kp DOWN        &kp RIGHT      &kp ENTER      
+        //│       .          │    M LEFT      │     M DOWN     │  M RIGHT          │ SCROLL_DOWN  │    │  PAGE DOWN    LEFT        |   DWON         │      RIGHT  │  ENTER      │
+             &kp DOT          &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT      &kp DOWN        &kp RIGHT      &kp ENTER      
         //├──────────────────┬────────────────┬────────────────┬───────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
         //│  1               │  2             │      3         │   4               │     5        │    │    6        |       7     │      8         │       9     │      0      │  
             &kp N1              &kp N2               &kp N3          &kp N4              &kp N5          &kp N6           &kp N7          &kp N8         &kp N9       &kp N0    
@@ -207,11 +207,11 @@
         //│  F1      │  F2      │  F3      │  F4       │ PROFILE 0  │   │ PROFILE 2  │ TOGGLEOUT  │ NEXTSONG │ VOL MUTE  │  WINDOWS │
             &kp F1     &kp F2     &kp F3     &kp F4     &bt BT_SEL 0     &bt BT_SEL 2 &out OUT_TOG &kp C_NEXT  &kp C_MUTE   &tog WIN
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼───────────┼──────────┤
-        //│  F5      │  F6      │  F7      │  F8       │ PROFILE 1  │   │ PROFILE 3  │ INC BRIGHT │PAUSEMUSIC│ VOL UP    │ none     │
-            &kp F5     &kp F6     &kp F7     &kp F8     &bt BT_SEL 1     &bt BT_SEL 3 &kp C_BRI_UP &kp C_PP   &kp C_VOL_UP &none
+        //│  F5      │  F6      │  F7      │  F8       │ PROFILE 1  │   │ PROFILE 3  │ INC BRIGHT │PAUSEMUSIC│ VOL UP    │ SYS RESET│
+            &kp F5     &kp F6     &kp F7     &kp F8     &bt BT_SEL 1     &bt BT_SEL 3 &kp C_BRI_UP &kp C_PP   &kp C_VOL_UP &sys_reset
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼───────────┼──────────┤
-        //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │ PREVSONG | VOL DOWN  │ none     │
-            &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC  &kp C_PP &kp C_VOL_DN &none
+        //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │ PREVSONG | VOL DOWN  │    NONE  │  
+            &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4  &kp C_BRI_DEC &kp C_PREV &kp C_VOL_DN &none
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┴───────────┴──────────╯
                                                 &trans     &trans         &trans     &trans
         //                                  ╰───────────┴──────────╯   ╰──────────┴────────────╯
