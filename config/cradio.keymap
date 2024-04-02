@@ -178,7 +178,7 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ENTER   │
             &kp A     HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,           L)   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ Repeat   │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ REPEAT   │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt LEF TAB  &sk LSHIFT    &kp SPACE  &lt RIG TAB
@@ -195,7 +195,7 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  ENTER   │
             &kp A    WHRML(S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,         L)   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  Repeat   │
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  REPEAT  │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &key_repeat 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt LEF TAB  &sk LSHIFT    &kp SPACE  &lt RIG TAB
@@ -231,8 +231,8 @@
         //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ ENTER    |
              &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │     |
-            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK  &kp 
+        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  REPEAT  |
+            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &key_repeat
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
