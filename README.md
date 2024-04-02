@@ -1,29 +1,16 @@
-Ferris Sweep Keyboard
+> **Ferris Sweep Keyboard**
 ![IMG_9232](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/4de14911-66ff-4c94-ab6c-a84ff53c6cac)
 
 Welcome to greedysnake's Ferris Sweep Keyboard repository! This README serves as your guide to understanding and using the Ferris Sweep Keyboard, a customizable and ergonomic mechanical keyboard designed for enthusiasts and professionals alike, the best part you can build it yourself just like I did with no prior experience needed (just some curiosity and tinkering)
 
-Overview
+**Overview**
 The Ferris Sweep Keyboard is a unique ergonomic keyboard that prioritizes comfort, functionality, and aesthetic appeal. Named after its distinctive curved design reminiscent of a ferris wheel, this keyboard aims to revolutionize your typing experience.
 
+Motivation for Transitioning to a Ferris Sweep Layout : Transitioning to a Ferris Sweep layout is driven by a desire to prioritize user comfort, enhance functionality, and elevate the typing experience:
 
-Motivation for Transitioning to a Ferris Sweep Layout
-
-The decision to transition to a Ferris Sweep layout is driven by a convergence of ergonomic, functional, and aesthetic considerations, all aimed at enhancing the user's typing experience. Below are some key motivations for making the switch:
-
-  Ergonomic Benefits:
-    1. Comfort: Traditional keyboard layouts often force users into unnatural hand positions, leading to discomfort and potential long-term health issues such as repetitive strain injuries (RSIs). The sweeping curvature of the Ferris Sweep layout promotes a more relaxed hand and wrist posture, reducing strain and fatigue during extended typing sessions.
-    2. Improved Reach: The ergonomic design of the Ferris Sweep layout ensures that keys are easily accessible, minimizing the need for excessive stretching or awkward finger movements. This promotes a more fluid and efficient typing experience while reducing the risk of muscle strain. 34 key layout was to only have one key movement per thumb to ease train muscle memory, alternatives include the Corne CRKBD 36 or 42key variant
-    3. Customization: The Ferris Sweep layout allows for greater customization and adaptability to individual preferences and typing habits. Users can adjust key placements and angles to suit their unique ergonomic needs, optimizing comfort and productivity.
-     
-  Functional Advantages:
-    1. Seamless Navigation: Integrating mouse buttons directly into the keyboard layout eliminates the need to switch between keyboard and mouse frequently, streamlining navigation and enhancing workflow efficiency.
-    2. Mac and Windows Compatibility: Effortlessly map all keyboard functions for both Mac and Windows operating systems, ensuring compatibility and optimal performance across platforms.
-    3. Enhanced Productivity: Customizable key mappings enable users to assign functions and shortcuts based on their specific workflow requirements. This facilitates faster access to frequently used commands and enhances overall productivity.
-    4. Cross-Platform Compatibility: The ability to map all keyboard functions for both Mac and Windows operating systems ensures a consistent and seamless typing experience across different platforms, catering to diverse user preferences and requirements.
-  
-  Aesthetic Appeal:
-    1. Unique Design: The distinctive curved shape of the Ferris Sweep layout sets it apart from traditional rectangular keyboards, making a bold statement on any workspace. Its sleek and modern aesthetic adds a touch of sophistication to the user's setup, enhancing both visual appeal and functionality.
+**Ergonomics:** The sweeping curvature reduces strain, promoting a relaxed posture and minimizing the risk of repetitive strain injuries. Customization options cater to individual ergonomic needs.
+**Functionality:** Integrated mouse buttons streamline navigation, while customizable key mappings optimize productivity. Compatibility with both Mac and Windows ensures a seamless experience across platforms.
+**Aesthetic Appeal:** The unique curved design adds sophistication to any workspace, setting the Ferris Sweep layout apart from traditional keyboards.
 
 In summary, the transition to a Ferris Sweep layout is motivated by a desire to prioritize user comfort, optimize functionality, and elevate the overall typing experience. By embracing ergonomic design principles, functional versatility, and aesthetic innovation, the Ferris Sweep layout offers a compelling solution for users seeking to enhance their productivity and well-being in the digital age.
 
