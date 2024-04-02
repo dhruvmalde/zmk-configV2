@@ -32,37 +32,37 @@ if you are just here for the keymap, here you go
 Keyboard Layout file  - ZMK Ferris Sweep
 
 Mac Alpha Layer
-* 	          &kp Q      &kp W      &kp E      &kp R               &kp T                      &kp Y              &kp U              &kp I           &kp O      &kp P
-*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H           HRMR(J,                  K,            L)      &kp BSPC
-*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT    &kp ENTER
+* 	          &kp Q      &kp W      &kp E      &kp R                &kp T                      &kp Y              &kp U              &kp I           &kp O    &kp P
+*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H           HRMR(J,                  K,            L)      &kp ENTER
+*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT    &key_repeat
 *                                                 &lt LEF TAB     &sk LSHIFT                    &kp SPACE      &lt RIG TAB
     
 
 
 Windows Alpha Layer
-*             &kp Q      &kp W       &kp E      &kp R         &kp T                   &kp Y             &kp U                  &kp I           &kp O         &kp P
-*             &kp A    WHRML(S,          D,            F)     &kp G                  &kp H      WHRMR(J,                       K,                  L)         &kp BSPC
-*             &kp Z      &kp X        &kp C      &kp V         &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &kp ENTER
+*             &kp Q      &kp W       &kp E      &kp R         &kp T                   &kp Y             &kp U                  &kp I           &kp O          &kp P
+*             &kp A    WHRML(S,          D,            F)     &kp G                  &kp H      WHRMR(J,                       K,                  L)         &kp ENTER
+*             &kp Z      &kp X        &kp C      &kp V         &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &key_repeat
 *                                                 &lt LEF TAB     &sk LSHIFT        &kp SPACE      &lt RIG TAB
 
 
 Navigation/Numbers
-*            &mwh DOT        &mkp RCLK           &mmv MOVE_UP     &mkp LCLK              &mwh SCROLL_UP       &kp PG_UP      &kp HOME     &kp UP        &kp END     &kp BSPC  
-*            &kp PRCNT         &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT       &mwh SCROLL_DOWN       &kp PG_DN     &kp LEFT     &kp DOWN   &kp RIGHT      &kp ENTER      
-*            &kp N1            &kp N2            &kp N3         &kp N4               &kp N5             &kp N6         &kp N7      &kp N8         &kp N9      &kp N0   
-*                                                               &trans               &trans              &trans       &trans
+*            &mwh DOT        &mkp RCLK           &mmv MOVE_UP     &mkp LCLK              &mwh SCROLL_UP       &kp PG_UP      &kp HOME     &kp UP      &kp END       &kp BSPC  
+*            &kp PRCNT         &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT       &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT     &kp DOWN     &kp RIGHT     &kp ENTER      
+*            &kp N1            &kp N2            &kp N3           &kp N4                &kp N5               &kp N6         &kp N7      &kp N8        &kp N9        &kp N0   
+*                                                                 &trans                &trans              &trans          &trans
 
         
 Symbols
-*             &kp EXCL   &kp AT         &kp HASH    &kp DLLR   &kp PRCNT     &kp CARET      &kp AMPS     &kp ASTRK   &kp GRAVE   &kp TILDE
-*             &kp LBKT   &kp LBRC    &kp LPAR.    &kp DQT     &kp FSLH        &kp MINUS      &kp EQUAL  &kp COLON   &kp SEMI       &kp BSPC
-*             &kp RBKT   &kp RBRC    &kp RPAR     &kp SQT    &kp BSLH        &kp UNDER     &kp PLUS     &kp PIPE         &kp QMARK  &kp ENTER
+*             &kp EXCL   &kp AT         &kp HASH    &kp DLLR   &kp PRCNT     &kp CARET      &kp AMPS     &kp ASTRK   &kp GRAVE       &kp TILDE
+*             &kp LBKT   &kp LBRC    &kp LPAR.    &kp DQT     &kp FSLH        &kp MINUS      &kp EQUAL  &kp COLON     &kp SEMI       &kp BSPC
+*             &kp RBKT   &kp RBRC    &kp RPAR     &kp SQT    &kp BSLH        &kp UNDER     &kp PLUS     &kp PIPE      &kp QMARK     &kp ENTER
 *                                                      &trans           &trans         &trans            &trans
     
 
 
 Function/Media
-*             &kp F1      &kp F2     &kp F3      &kp F4      &bt BT_SEL 0     &bt BT_SEL 2         &out OUT_TOG        &kp C_NEXT       &kp C_MUTE            &tog WIN
-*             &kp F5     &kp F6      &kp F7     &kp F8       &bt BT_SEL 1     &bt BT_SEL 3         &kp C_BRI_UP          &kp C_PP           &kp C_VOL_UP         &none
-*             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR        &bt BT_SEL 4         &kp C_BRI_DEC       &kp C_PREV      &kp C_VOL_DN         &none
-*                                                                 &trans        &trans                &trans                     &trans
+*             &kp F1      &kp F2     &kp F3      &kp F4      &bt BT_SEL 0     &bt BT_SEL 2         &out OUT_TOG        &kp C_NEXT         &kp C_MUTE           &tog WIN
+*             &kp F5     &kp F6      &kp F7     &kp F8       &bt BT_SEL 1     &bt BT_SEL 3         &kp C_BRI_UP        &kp C_PP           &kp C_VOL_UP         &none
+*             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR        &bt BT_SEL 4         &kp C_BRI_DEC       &kp C_PREV          &kp C_VOL_DN         &none
+*                                                                 &trans        &trans                &trans           &trans
