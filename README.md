@@ -18,6 +18,8 @@ References and key guides that were helpful during the build
 https://www.youtube.com/@BenVallack
 https://www.youtube.com/@KyekOfficial
 https://www.youtube.com/@SethusBuilds
+https://www.youtube.com/@joe_scotto
+https://www.youtube.com/@joseanmartinez
 
 Sourcing parts:
 https://typeractive.xyz
