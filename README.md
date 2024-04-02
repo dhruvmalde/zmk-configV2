@@ -10,9 +10,9 @@ Motivation for Transitioning to a Ferris Sweep Layout : Transitioning to a Ferri
     
 **Ergonomics:** The sweeping curvature reduces strain, promoting a relaxed posture and minimizing the risk of repetitive strain injuries. Customization options cater to individual ergonomic needs.
     
-**Functionality: ** Integrated mouse buttons streamline navigation, while customizable key mappings optimize productivity. Compatibility with both Mac and Windows ensures a seamless experience across platforms.
+**Functionality:** Integrated mouse buttons streamline navigation, while customizable key mappings optimize productivity. Compatibility with both Mac and Windows ensures a seamless experience across platforms.
     
-** Aesthetic Appeal:** The unique curved design adds sophistication to any workspace, setting the Ferris Sweep layout apart from traditional keyboards.
+**Aesthetic Appeal:** The unique curved design adds sophistication to any workspace, setting the Ferris Sweep layout apart from traditional keyboards.
 
 In summary, the transition to a Ferris Sweep layout is motivated by a desire to prioritize user comfort, optimize functionality, and elevate the overall typing experience. By embracing ergonomic design principles, functional versatility, and aesthetic innovation, the Ferris Sweep layout offers a compelling solution for users seeking to enhance their productivity and well-being in the digital age.
 
