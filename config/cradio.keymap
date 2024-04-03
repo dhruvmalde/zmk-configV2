@@ -102,7 +102,7 @@
         combo_allw {
                 timeout-ms = <50>;
                 key-positions = <21 22 23>;
-                bindings = <&kp LC(Z)>;
+                bindings = <&kp LC(A)>;
                 layers = <1>;
         };
        
