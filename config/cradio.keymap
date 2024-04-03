@@ -68,7 +68,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-     bspc_del: backspace_delete {
+         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
@@ -166,7 +166,6 @@
                 bindings = <&kp ENTER>;
         };
     };
- };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
