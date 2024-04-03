@@ -68,13 +68,12 @@
             bindings = <&kp>, <&kp>;
         };
 
-        bspc_del: backspace_delete {
+        mm_bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "mm_bspc_del";
+            label = "BACKSPACE DELETE";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
     };  
 
