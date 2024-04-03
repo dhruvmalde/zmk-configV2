@@ -67,6 +67,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+
      bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -75,7 +76,7 @@
            
         };    
     };
-};
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
