@@ -77,8 +77,8 @@
            
                  };    
             };
-     };
- 
+     
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -166,6 +166,7 @@
                 bindings = <&kp ENTER>;
         };
     };
+ };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
