@@ -31,7 +31,7 @@ https://keebmaker.com
 if you are just here for the keymap, here you go
 
 
-Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Enter, Caps Word, Delete and Backspace 
+Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Enter, Delete and Backspace 
 Behaviors : Backspace Delete (Mod Morph)
 
 Keyboard Layout file  - ZMK Ferris Sweep
@@ -40,7 +40,7 @@ Mac Alpha Layer
 * 	          &kp Q      &kp W      &kp E      &kp R                &kp T                      &kp Y              &kp U              &kp I           &kp O       &kp P
 *             &kp A      HRML(S,          D,            F)          &kp G                      &kp H              HRMR(J,                K,              L)      &mm_bspc_del
 *             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT       &kp ENTER
-*                                                 &lt LEF TAB     &sk LSHIFT                   &kp SPACE          &lt RIG TAB
+*                                                 &lt LEF TAB     &kp LSHIFT                   &kp SPACE          &lt RIG TAB
     
 
 
@@ -48,7 +48,7 @@ Windows Alpha Layer
 *             &kp Q      &kp W       &kp E      &kp R               &kp T                  &kp Y             &kp U                  &kp I           &kp O          &kp P
 *             &kp A    WHRML(S,          D,            F)           &kp G                  &kp H           WHRMR(J,                    K,               L)         &mm_bspc_del
 *             &kp Z      &kp X        &kp C      &kp V              &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &kp ENTER
-*                                                 &lt LEF TAB       &sk LSHIFT        &kp SPACE      &lt RIG TAB
+*                                                 &lt LEF TAB       &kp LSHIFT        &kp SPACE      &lt RIG TAB
 
 
 Navigation/Numbers
