@@ -67,17 +67,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-
-         bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACK_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-           
-                 };    
-            };
+     };
      
 
     combos {
@@ -186,8 +176,8 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │BACKSPACE │
-            &kp A     HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,           L)   &kp BACKSPACE
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  BACKDEL │
+            &kp A     HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,           L)   &mm_bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  ENTER   │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
@@ -203,8 +193,8 @@
         //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ BACKSPACE│
-            &kp A    WHRML(S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,         L)   &kp BACKSPACE
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  BACKDEL │
+            &kp A    WHRML(S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,         L)   &mm_bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
@@ -220,8 +210,8 @@
         //│       %          │  M B2          │      M UP       │      M B2        │   SCROLL UP  │    │  PAGE UP    │   HOME      |      UP        │      END    │    ENTER    │   
             &kp PRCNT            &mkp RCLK        &mmv MOVE_UP    &mkp LCLK           &mwh SCROLL_UP       &kp PG_UP      &kp HOME       &kp UP         &kp END       &kp ENTER  
         //├──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
-        //│       .          │    M LEFT      │     M DOWN     │  M RIGHT          │ SCROLL_DOWN  │    │  PAGE DOWN    LEFT        |   DWON         │      RIGHT  │  BACKSPACE  │
-             &kp DOT          &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT      &kp DOWN        &kp RIGHT      &kp BACKSPACE      
+        //│       .          │    M LEFT      │     M DOWN     │  M RIGHT          │ SCROLL_DOWN  │    │  PAGE DOWN    LEFT        |   DWON         │      RIGHT  │   BACKDEL   │
+             &kp DOT          &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT      &kp DOWN        &kp RIGHT      &mm_bspc_del      
         //├──────────────────┬────────────────┬────────────────┬───────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
         //│  1               │  2             │      3         │   4               │     5        │    │    6        |       7     │      8         │       9     │      0      │  
             &kp N1              &kp N2               &kp N3          &kp N4              &kp N5          &kp N6           &kp N7          &kp N8         &kp N9       &kp N0    
@@ -239,11 +229,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ ENTER    |
-             &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &kp ENTER
+        //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ BACKDEL  |
+             &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &mm_bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  REPEAT  |
-            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &key_repeat
+        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  ENTER  |
+            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
