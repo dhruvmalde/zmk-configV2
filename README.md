@@ -1,5 +1,6 @@
 > **Ferris Sweep Keyboard**
-![IMG_9232](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/4de14911-66ff-4c94-ab6c-a84ff53c6cac)
+![IMG_9232](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/ae871a76-006a-4d10-94b6-84b6902707ed)
+
 
 Welcome to greedysnake's Ferris Sweep Keyboard repository! This README serves as your guide to understanding and using the Ferris Sweep Keyboard, a customizable and ergonomic mechanical keyboard designed for enthusiasts and professionals alike, the best part you can build it yourself just like I did with no prior experience needed (just some curiosity and tinkering)
 
