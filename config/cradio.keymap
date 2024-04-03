@@ -67,8 +67,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-     };
-    behaviors {
+
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "mm_bspc_del";
