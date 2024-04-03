@@ -30,7 +30,7 @@ https://keebmaker.com
 if you are just here for the keymap, here you go
 
 
-Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Cap Word, Delete and Backspace 
+Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Enter, Caps Word, Delete and Backspace 
 Behaviors : Backspace Delete (Mod Morph)
 
 Keyboard Layout file  - ZMK Ferris Sweep
