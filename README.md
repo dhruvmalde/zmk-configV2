@@ -29,33 +29,37 @@ https://keebmaker.com
 
 if you are just here for the keymap, here you go
 
+
+Combos : (Alpha Layers only) Copy, Paste, Select All and Undo ; (All layers) Escape, Cap Word, Delete and Backspace 
+Behaviors : Backspace Delete (Mod Morph)
+
 Keyboard Layout file  - ZMK Ferris Sweep
 
 Mac Alpha Layer
 * 	          &kp Q      &kp W      &kp E      &kp R                &kp T                      &kp Y              &kp U              &kp I           &kp O    &kp P
-*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H           HRMR(J,                  K,            L)      &kp ENTER
-*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT    &key_repeat
+*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H           HRMR(J,                  K,            L)      &mm_bspc_del
+*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT    &kp ENTER
 *                                                 &lt LEF TAB     &sk LSHIFT                    &kp SPACE      &lt RIG TAB
     
 
 
 Windows Alpha Layer
 *             &kp Q      &kp W       &kp E      &kp R         &kp T                   &kp Y             &kp U                  &kp I           &kp O          &kp P
-*             &kp A    WHRML(S,          D,            F)     &kp G                  &kp H      WHRMR(J,                       K,                  L)         &kp ENTER
-*             &kp Z      &kp X        &kp C      &kp V         &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &key_repeat
+*             &kp A    WHRML(S,          D,            F)     &kp G                  &kp H      WHRMR(J,                       K,                  L)         &mm_bspc_del
+*             &kp Z      &kp X        &kp C      &kp V         &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &kp ENTER
 *                                                 &lt LEF TAB     &sk LSHIFT        &kp SPACE      &lt RIG TAB
 
 
 Navigation/Numbers
-*            &mwh DOT        &mkp RCLK           &mmv MOVE_UP     &mkp LCLK              &mwh SCROLL_UP       &kp PG_UP      &kp HOME     &kp UP      &kp END       &kp BSPC  
-*            &kp PRCNT         &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT       &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT     &kp DOWN     &kp RIGHT     &kp ENTER      
+*            &mwh DOT        &mkp RCLK           &mmv MOVE_UP     &mkp LCLK              &mwh SCROLL_UP       &kp PG_UP      &kp HOME     &kp UP      &kp END       &kp ENTER
+*            &kp PRCNT         &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT       &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT     &kp DOWN     &kp RIGHT     &mm_bspc_del    
 *            &kp N1            &kp N2            &kp N3           &kp N4                &kp N5               &kp N6         &kp N7      &kp N8        &kp N9        &kp N0   
 *                                                                 &trans                &trans              &trans          &trans
 
         
 Symbols
 *             &kp EXCL   &kp AT         &kp HASH    &kp DLLR   &kp PRCNT     &kp CARET      &kp AMPS     &kp ASTRK   &kp GRAVE       &kp TILDE
-*             &kp LBKT   &kp LBRC    &kp LPAR.    &kp DQT     &kp FSLH        &kp MINUS      &kp EQUAL  &kp COLON     &kp SEMI       &kp BSPC
+*             &kp LBKT   &kp LBRC    &kp LPAR.    &kp DQT     &kp FSLH        &kp MINUS      &kp EQUAL  &kp COLON     &kp SEMI       &mm_bspc_del
 *             &kp RBKT   &kp RBRC    &kp RPAR     &kp SQT    &kp BSLH        &kp UNDER     &kp PLUS     &kp PIPE      &kp QMARK     &kp ENTER
 *                                                      &trans           &trans         &trans            &trans
     
