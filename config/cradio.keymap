@@ -232,8 +232,8 @@
         //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ BACKDEL  |
              &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &mm_bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  ENTER  |
-            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &ENTER
+        //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  ENTER   |
+            &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
