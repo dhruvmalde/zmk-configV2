@@ -30,24 +30,24 @@ https://keebmaker.com
 if you are just here for the keymap, here you go
 
 
-Combos : (Alpha Layers only) Copy, Paste, Select All and Undo ; (All layers) Escape, Cap Word, Delete and Backspace 
+Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Cap Word, Delete and Backspace 
 Behaviors : Backspace Delete (Mod Morph)
 
 Keyboard Layout file  - ZMK Ferris Sweep
 
 Mac Alpha Layer
-* 	          &kp Q      &kp W      &kp E      &kp R                &kp T                      &kp Y              &kp U              &kp I           &kp O    &kp P
-*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H           HRMR(J,                  K,            L)      &mm_bspc_del
-*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT    &kp ENTER
-*                                                 &lt LEF TAB     &sk LSHIFT                    &kp SPACE      &lt RIG TAB
+* 	          &kp Q      &kp W      &kp E      &kp R                &kp T                      &kp Y              &kp U              &kp I           &kp O       &kp P
+*             &kp A      HRML(S,          D,            F)          &kp G                      &kp H              HRMR(J,                K,              L)      &mm_bspc_del
+*             &kp Z      &kp X       &kp C      &kp V               &kp B                      &kp N              &kp M             &kp COMMA      &kp DOT       &kp ENTER
+*                                                 &lt LEF TAB     &sk LSHIFT                   &kp SPACE          &lt RIG TAB
     
 
 
 Windows Alpha Layer
-*             &kp Q      &kp W       &kp E      &kp R         &kp T                   &kp Y             &kp U                  &kp I           &kp O          &kp P
-*             &kp A    WHRML(S,          D,            F)     &kp G                  &kp H      WHRMR(J,                       K,                  L)         &mm_bspc_del
-*             &kp Z      &kp X        &kp C      &kp V         &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &kp ENTER
-*                                                 &lt LEF TAB     &sk LSHIFT        &kp SPACE      &lt RIG TAB
+*             &kp Q      &kp W       &kp E      &kp R               &kp T                  &kp Y             &kp U                  &kp I           &kp O          &kp P
+*             &kp A    WHRML(S,          D,            F)           &kp G                  &kp H           WHRMR(J,                    K,               L)         &mm_bspc_del
+*             &kp Z      &kp X        &kp C      &kp V              &kp B                  &kp N              &kp M             &kp COMMA           &kp DOT        &kp ENTER
+*                                                 &lt LEF TAB       &sk LSHIFT        &kp SPACE      &lt RIG TAB
 
 
 Navigation/Numbers
@@ -58,15 +58,15 @@ Navigation/Numbers
 
         
 Symbols
-*             &kp EXCL   &kp AT         &kp HASH    &kp DLLR   &kp PRCNT     &kp CARET      &kp AMPS     &kp ASTRK   &kp GRAVE       &kp TILDE
-*             &kp LBKT   &kp LBRC    &kp LPAR.    &kp DQT     &kp FSLH        &kp MINUS      &kp EQUAL  &kp COLON     &kp SEMI       &mm_bspc_del
-*             &kp RBKT   &kp RBRC    &kp RPAR     &kp SQT    &kp BSLH        &kp UNDER     &kp PLUS     &kp PIPE      &kp QMARK     &kp ENTER
-*                                                      &trans           &trans         &trans            &trans
+*             &kp EXCL   &kp AT         &kp HASH       &kp DLLR     &kp PRCNT        &kp CARET        &kp AMPS          &kp ASTRK     &kp GRAVE      &kp TILDE
+*             &kp LBKT   &kp LBRC       &kp LPAR.      &kp DQT      &kp FSLH         &kp MINUS        &kp EQUAL         &kp COLON     &kp SEMI       &mm_bspc_del
+*             &kp RBKT   &kp RBRC       &kp RPAR       &kp SQT      &kp BSLH         &kp UNDER        &kp PLUS          &kp PIPE      &kp QMARK      &kp ENTER
+*                                                                     &trans           &trans         &trans            &trans
     
 
 
 Function/Media
-*             &kp F1      &kp F2     &kp F3      &kp F4      &bt BT_SEL 0     &bt BT_SEL 2         &out OUT_TOG        &kp C_NEXT         &kp C_MUTE           &tog WIN
-*             &kp F5     &kp F6      &kp F7     &kp F8       &bt BT_SEL 1     &bt BT_SEL 3         &kp C_BRI_UP        &kp C_PP           &kp C_VOL_UP         &none
-*             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR        &bt BT_SEL 4         &kp C_BRI_DEC       &kp C_PREV          &kp C_VOL_DN         &none
-*                                                                 &trans        &trans                &trans           &trans
+*             &kp F1      &kp F2     &kp F3      &kp F4       &bt BT_SEL 0     &bt BT_SEL 2         &out OUT_TOG        &kp C_NEXT         &kp C_MUTE           &tog WIN
+*             &kp F5     &kp F6      &kp F7      &kp F8       &bt BT_SEL 1     &bt BT_SEL 3         &kp C_BRI_UP        &kp C_PP           &kp C_VOL_UP         &none
+*             &kp F9     &kp F10    &kp F11      &kp F12       &bt BT_CLR      &bt BT_SEL 4         &kp C_BRI_DEC       &kp C_PREV         &kp C_VOL_DN         &none
+*                                                &trans        &trans          &trans               &trans
