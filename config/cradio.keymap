@@ -72,11 +72,11 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE DELETE";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT)>;
+            bindings = <&kp BSPC>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };  
-
+    
     combos {
         compatible = "zmk,combos";
         combo_esc {
