@@ -67,84 +67,70 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-
-        mm_bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LSFT)>;
-        }; 
-
- 
+    };  
+    
     combos {
-    compatible = "zmk,combos";
+        compatible = "zmk,combos";
         combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
 
         combo_copyw {
-                    timeout-ms = <50>;
-                    key-positions = <21 22>;
-                    bindings = <&kp LC(C)>;
-                    layers = <1>;
-            };
-        
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp LC(C)>;
+                layers = <1>;
+        };
+       
         combo_pastew {
-                    timeout-ms = <50>;
-                    key-positions = <22 23>;
-                    bindings = <&kp LC(V)>;
-                    layers = <1>;
-            };
-        
+                timeout-ms = <50>;
+                key-positions = <22 23>;
+                bindings = <&kp LC(V)>;
+                layers = <1>;
+        };
+       
         combo_undow {
-                    timeout-ms = <50>;
-                    key-positions = <20 24>;
-                    bindings = <&kp LC(Z)>;
-                    layers = <1>;
-            };
+                timeout-ms = <50>;
+                key-positions = <20 24>;
+                bindings = <&kp LC(Z)>;
+                layers = <1>;
+        };
 
         combo_copym {
-                    timeout-ms = <50>;
-                    key-positions = <21 22>;
-                    bindings = <&kp LG(C)>;
-                    layers = <0>;
-            };
-        
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&kp LG(C)>;
+                layers = <0>;
+        };
+       
         combo_pastem {
-                    timeout-ms = <50>;
-                    key-positions = <22 23>;
-                    bindings = <&kp LG(V)>;
-                    layers = <0>;
-            };
+                timeout-ms = <50>;
+                key-positions = <22 23>;
+                bindings = <&kp LG(V)>;
+                layers = <0>;
+        };
 
         combo_undom {
-                    timeout-ms = <50>;
-                    key-positions = <20 24>;
-                    bindings = <&kp LG(Z)>;
-                    layers = <0>;
-            };
-
-
-        combo_backspace {
-                    timeout-ms = <50>;
-                    key-positions = <8 9>;
-                    bindings = <&kp BSPC>;
-            };
-        
+                timeout-ms = <50>;
+                key-positions = <20 24>;
+                bindings = <&kp LG(Z)>;
+                layers = <0>;
+        };
+    
         combo_delete {
-                    timeout-ms = <50>;
-                    key-positions = <5 6>;
-                    bindings = <&kp DEL>;
-            };
+                timeout-ms = <50>;
+                key-positions = <19 31>;
+                bindings = <&kp DEL>;
+                layers = <0 1 3>;
+        };
 
         combo_enter {
-                    timeout-ms = <50>;
-                    key-positions = <31 32>;
-                    bindings = <&kp ENTER>;
-            };
+                timeout-ms = <50>;
+                key-positions = <31 32>;
+                bindings = <&kp ENTER>;
+        };
     };
 
     conditional_layers {
@@ -166,12 +152,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  BACKDEL │
-            &kp A     HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,           L)   &mm_bspc_del
+            &kp A     HRML(S,         D,         F)     &kp G          &kp H      HRMR(J,        K,           L)   &kp BACKSPACE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  ENTER   │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSFT  &kp SPACE  &lt RIG TAB
+                                           &lt LEF TAB  &kp LSFT       &kp SPACE  &lt RIG TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -183,12 +169,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  BACKDEL │
-            &kp A    WHRML(S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,         L)   &mm_bspc_del
+            &kp A    WHRML(S,         D,         F)     &kp G          &kp H      WHRMR(J,        K,         L)   &kp BACKSPACE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSFT    &kp SPACE  &lt RIG TAB
+                                           &lt LEF TAB  &kp LSFT       &kp SPACE  &lt RIG TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -196,20 +182,19 @@
         left_layer {
             bindings = <
         //╭──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────╮    ╭─────────────┬─────────────┬────────────────┬─────────────┬─────────────╮
-        //│       %          │  M B2          │      M UP       │      M B2        │   SCROLL UP  │    │  PAGE UP    │   HOME      |      UP        │      END    │    ENTER    │   
-            &kp PRCNT            &mkp RCLK        &mmv MOVE_UP    &mkp LCLK           &mwh SCROLL_UP       &kp PG_UP      &kp HOME       &kp UP         &kp END       &kp ENTER  
+        //│         .        │   7            │       8         │    9             │  BACKSPACE   │    │    M B2     │    M LEFT   │    M DOWN      │   M UP      │  M RIGHT    │   
+                 &kp DOT          &kp N2          &kp N3            &kp N4          &kp BACKSPACE        &mkp RCLK     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   
         //├──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
-        //│       .          │    M LEFT      │     M DOWN     │  M RIGHT          │ SCROLL_DOWN  │    │  PAGE DOWN    LEFT        |   DWON         │      RIGHT  │   BACKDEL   │
-             &kp DOT          &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &mwh SCROLL_DOWN      &kp PG_DN     &kp LEFT      &kp DOWN        &kp RIGHT      &mm_bspc_del      
+        //│       0          │  4             │       5         │   6              │      ENTER   │    │     M B1    |     LEFT    |   DOWN         │     UP      │      RIGHT  │ 
+                 &kp N0          &kp N2               &kp N3          &kp N4          &kp ENTER         &mkp LCLK       &kp LEFT       &kp DOWN         &kp UP        &kp RIGHT          
         //├──────────────────┬────────────────┬────────────────┬───────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
-        //│  1               │  2             │      3         │   4               │     5        │    │    6        |       7     │      8         │       9     │      0      │  
-            &kp N1              &kp N2               &kp N3          &kp N4              &kp N5          &kp N6           &kp N7          &kp N8         &kp N9       &kp N0    
+        //│          %       │  1             │       2        │   3               │    DELETE    │    │    M B3     |   HOME      │   PD DOWN      │     PG UP   │     END     │  
+                 &kp PRCNT       &kp N2               &kp N3          &kp N4           &kp DEL             &kp MCLK     &kp HOME      &kp PG_DN         &kp PG_UP      &kp END 
         //├──────────────────┴────────────────┴────────────────┴───────────────────┴──────────────│    │─────────────┴─────────────┴────────────────┴─────────────┴─────────────╯
                                                                     &trans              &trans             &trans           &trans
         //                                                      ╰───────────────────┴──────────────╯    ╰─────────────┴─────────────╯                                                             
             >;
         };
-
 
         
          Right_layer {
@@ -219,7 +204,7 @@
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  [       │  {       │  (       │    "     │   /          │    -     │  =       │     :    │  ;       │ BACKDEL  |
-             &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &mm_bspc_del
+             &kp LBKT   &kp LBRC   &kp LPAR  &kp DQT     &kp FSLH      &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI  &kp BACKSPACE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ]       │  }       │  )       │  '       │    \         │     _    │  +       │  │       │   ?      │  ENTER   |
             &kp RBKT   &kp RBRC   &kp RPAR   &kp SQT    &kp BSLH      &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK    &kp ENTER
