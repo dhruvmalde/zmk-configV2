@@ -17,22 +17,24 @@ Motivation for Transitioning to a Ferris Sweep Layout : Transitioning to a Ferri
 
 In summary, the transition to a Ferris Sweep layout is motivated by a desire to prioritize user comfort, optimize functionality, and elevate the overall typing experience. By embracing ergonomic design principles, functional versatility, and aesthetic innovation, the Ferris Sweep layout offers a compelling solution for users seeking to enhance their productivity and well-being in the digital age.
 
-References and key guides that were helpful during the build
+**References and key guides that were helpful during the build**
 https://www.youtube.com/@BenVallack
 https://www.youtube.com/@KyekOfficial
 https://www.youtube.com/@SethusBuilds
 https://www.youtube.com/@joe_scotto
 https://www.youtube.com/@joseanmartinez
 
-Sourcing parts:
+**Key mapping and visuaalization made easy**
+https://github.com/caksoylar/keymap-drawer-web
+https://nickcoutsos.github.io/keymap-editor/
+
+**Sourcing parts:**
 https://typeractive.xyz
 https://keebmaker.com
 
 if you are just here for the keymap, here you go
 
-
-Combos : (Alpha Layers only) Copy, Paste and Undo ; (All layers) Escape, Enter, Delete and Backspace 
-Behaviors : Backspace Delete (Mod Morph)
+Combos : (Alpha Layers only) Copy, Paste, Delete and Undo ; (All layers) Escape & Enter
 
 Keyboard Layout file  - ZMK Ferris Sweep
 ![download](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/46c587f6-c152-48fe-9a19-bcc50d27c6b3)
