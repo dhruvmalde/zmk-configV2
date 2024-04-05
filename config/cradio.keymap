@@ -73,11 +73,9 @@
             label = "BACKSPACE DELETE";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DELETE>;
-            mods = <(MOD_LSHIFT)>;
-            masked_mods = <(MOD_LSHIFT)>;
+            mods = <(MOD_LSFT)>;
         };
-    };
-
+    };  
     
     combos {
         compatible = "zmk,combos";
@@ -173,7 +171,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │  ENTER   │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+                                           &lt LEF TAB  &kp MOD_LSFT  &kp SPACE  &lt RIG TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -190,7 +188,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG TAB
+                                           &lt LEF TAB  &kp MOD_LSFT    &kp SPACE  &lt RIG TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -248,3 +246,4 @@
             >;
         };
     };
+};
