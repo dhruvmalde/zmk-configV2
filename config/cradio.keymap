@@ -72,89 +72,79 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE DELETE";
             #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DELETE>;
+            bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT)>;
-        };
+        }; 
 
-    
-        mm_bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
-    };  
-    
+ 
     combos {
-        compatible = "zmk,combos";
+    compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
+                timeout-ms = <50>;
+                key-positions = <0 1>;
+                bindings = <&kp ESC>;
+            };
 
         combo_copyw {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp LC(C)>;
-                layers = <1>;
-        };
-       
+                    timeout-ms = <50>;
+                    key-positions = <21 22>;
+                    bindings = <&kp LC(C)>;
+                    layers = <1>;
+            };
+        
         combo_pastew {
-                timeout-ms = <50>;
-                key-positions = <22 23>;
-                bindings = <&kp LC(V)>;
-                layers = <1>;
-        };
-       
+                    timeout-ms = <50>;
+                    key-positions = <22 23>;
+                    bindings = <&kp LC(V)>;
+                    layers = <1>;
+            };
+        
         combo_undow {
-                timeout-ms = <50>;
-                key-positions = <20 24>;
-                bindings = <&kp LC(Z)>;
-                layers = <1>;
-        };
+                    timeout-ms = <50>;
+                    key-positions = <20 24>;
+                    bindings = <&kp LC(Z)>;
+                    layers = <1>;
+            };
 
         combo_copym {
-                timeout-ms = <50>;
-                key-positions = <21 22>;
-                bindings = <&kp LG(C)>;
-                layers = <0>;
-        };
-       
+                    timeout-ms = <50>;
+                    key-positions = <21 22>;
+                    bindings = <&kp LG(C)>;
+                    layers = <0>;
+            };
+        
         combo_pastem {
-                timeout-ms = <50>;
-                key-positions = <22 23>;
-                bindings = <&kp LG(V)>;
-                layers = <0>;
-        };
+                    timeout-ms = <50>;
+                    key-positions = <22 23>;
+                    bindings = <&kp LG(V)>;
+                    layers = <0>;
+            };
 
         combo_undom {
-                timeout-ms = <50>;
-                key-positions = <20 24>;
-                bindings = <&kp LG(Z)>;
-                layers = <0>;
-        };
+                    timeout-ms = <50>;
+                    key-positions = <20 24>;
+                    bindings = <&kp LG(Z)>;
+                    layers = <0>;
+            };
 
 
         combo_backspace {
-                timeout-ms = <50>;
-                key-positions = <8 9>;
-                bindings = <&kp BSPC>;
-        };
-    
+                    timeout-ms = <50>;
+                    key-positions = <8 9>;
+                    bindings = <&kp BSPC>;
+            };
+        
         combo_delete {
-                timeout-ms = <50>;
-                key-positions = <5 6>;
-                bindings = <&kp DEL>;
-        };
+                    timeout-ms = <50>;
+                    key-positions = <5 6>;
+                    bindings = <&kp DEL>;
+            };
 
         combo_enter {
-                timeout-ms = <50>;
-                key-positions = <31 32>;
-                bindings = <&kp ENTER>;
-        };
+                    timeout-ms = <50>;
+                    key-positions = <31 32>;
+                    bindings = <&kp ENTER>;
+            };
     };
 
     conditional_layers {
