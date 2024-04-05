@@ -76,7 +76,8 @@
             mods = <(MOD_LSHIFT)>;
             masked_mods = <(MOD_LSHIFT)>;
         };
-    };  
+    };
+};
     
     combos {
         compatible = "zmk,combos";
