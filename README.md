@@ -35,7 +35,7 @@ https://keebmaker.com
 
 if you are just here for the keymap, here you go
 
-Combos : (Alpha Layers only) Copy, Paste, Delete and Undo ; (All layers) Escape & Enter
+Combo implementation: Copy, Paste, Undo, Delete, Escape & Enter
 
 Keyboard Layout file  - ZMK Ferris Sweep
 ![Unknown](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/c820990c-d586-419b-9f78-f459e3fa90c7)>
