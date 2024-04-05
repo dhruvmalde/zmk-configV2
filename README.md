@@ -38,4 +38,5 @@ if you are just here for the keymap, here you go
 Combo implementation: Copy, Paste, Undo, Delete, Escape & Enter
 
 Keyboard Layout file  - ZMK Ferris Sweep
-![Unknown](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/c820990c-d586-419b-9f78-f459e3fa90c7)>
+
+![image](https://github.com/greedysnakeDRV/zmk-configV2/assets/161101617/98465fdc-a89e-48b5-9cd8-a2df38a5847c)
