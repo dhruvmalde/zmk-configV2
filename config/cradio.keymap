@@ -121,7 +121,7 @@
     
         combo_delete {
                 timeout-ms = <50>;
-                key-positions = <19 31>;
+                key-positions = <18 19>;
                 bindings = <&kp DEL>;
                 layers = <0 1 3>;
         };
@@ -182,14 +182,14 @@
         left_layer {
             bindings = <
         //╭──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────╮    ╭─────────────┬─────────────┬────────────────┬─────────────┬─────────────╮
-        //│         .        │   7            │       8         │    9             │  BACKSPACE   │    │    M B2     │    M LEFT   │    M DOWN      │   M UP      │  M RIGHT    │   
-                 &kp DOT          &kp N2          &kp N3            &kp N4          &kp BACKSPACE        &mkp RCLK     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   
+        //│         .        │   7            │       8         │    9             │  BACKSPACE   │    │    M B3     │    M LEFT   │    M DOWN      │   M UP      │  M RIGHT    │   
+                 &kp DOT          &kp N7          &kp N8            &kp N9          &kp BACKSPACE        &mkp LCLK     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT   
         //├──────────────────┬────────────────┬─────────────────┬──────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
         //│       0          │  4             │       5         │   6              │      ENTER   │    │     M B1    |     LEFT    |   DOWN         │     UP      │      RIGHT  │ 
-                 &kp N0          &kp N2               &kp N3          &kp N4          &kp ENTER         &mkp LCLK       &kp LEFT       &kp DOWN         &kp UP        &kp RIGHT          
+                 &kp N0          &kp N4               &kp N5          &kp N6          &kp ENTER         &mkp MCLK       &kp LEFT       &kp DOWN         &kp UP        &kp RIGHT          
         //├──────────────────┬────────────────┬────────────────┬───────────────────┬──────────────│    │─────────────┬─────────────┬────────────────┬─────────────┬─────────────┤
         //│          %       │  1             │       2        │   3               │    DELETE    │    │    M B3     |   HOME      │   PD DOWN      │     PG UP   │     END     │  
-                 &kp PRCNT       &kp N2               &kp N3          &kp N4           &kp DEL             &kp MCLK     &kp HOME      &kp PG_DN         &kp PG_UP      &kp END 
+                 &kp PRCNT       &kp N1               &kp N2          &kp N3           &kp DEL             &mkp RCLK     &kp HOME      &kp PG_DN         &kp PG_UP      &kp END 
         //├──────────────────┴────────────────┴────────────────┴───────────────────┴──────────────│    │─────────────┴─────────────┴────────────────┴─────────────┴─────────────╯
                                                                     &trans              &trans             &trans           &trans
         //                                                      ╰───────────────────┴──────────────╯    ╰─────────────┴─────────────╯                                                             
