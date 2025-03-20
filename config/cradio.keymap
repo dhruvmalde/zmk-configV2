@@ -119,10 +119,10 @@
                 layers = <0>;
         };
     
-        combo_delete {
+        combo_backspace {
                 timeout-ms = <50>;
                 key-positions = <8 9>;
-                bindings = <&kp DEL>;
+                bindings = <&kp BACKSPACE>;
                 layers = <0 1 3>;
         };
 
